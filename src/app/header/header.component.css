@@ -1,0 +1,125 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .main-header {
+    background-color: #f9f7f7; /* Cor de fundo do cabeçalho */
+    color: #fff; /* Cor do texto no cabeçalho */
+    padding: 20px; /* Espaçamento interno */
+    text-align: center; /* Alinhamento do texto */
+    width: 100%; /* Ocupar toda a largura */
+    border: 1px solid rgb(255, 255, 255); /* Adicionar uma borda azul */
+    margin: 0; /* Remover todas as margens */
+    margin-top: -9px; 
+    box-sizing: border-box; /* Incluir a borda na largura total */
+}
+  
+  .main-header__title {
+
+    margin: 0; /* Remover margem padrão */
+    font-size: 70px; /* Tamanho da fonte aumentado */
+    margin-bottom: 20px; /* Espaçamento inferior */
+  }
+  
+  .main-header__title--blue {
+    color: #007bff; /* Cor azul para o título */
+    font-size: 70px;
+  }
+  
+  .main-header__title--orange {
+    color: #ff7f00; /* Cor laranja para o título */
+    font-size: 70px;
+    
+  }
+  
+  .container-menu {
+    
+    display: flex; /* Exibir em linha */
+    justify-content: space-between; /* Distribuir o espaço entre os elementos */
+    align-items: flex-start; /* Alinhar verticalmente no início */
+    margin: 0 22px; /* Margem à esquerda e à direita */
+    
+    cursor: pointer;
+
+  }
+  
+  .main-header__menu ul {
+    list-style-type: none; /* Remover marcadores de lista */
+    margin: 0;
+    padding: 0;
+    display: flex; /* Exibir em linha */
+  }
+  
+  .main-header__menu ul li {
+    margin-right: 35px; /* Espaçamento entre os itens do menu */
+    
+  }
+  
+  .main-header__menu ul li:last-child {
+    margin-right: 26px; /* Remover margem do último item */
+  }
+  
+  .main-header__menu ul li a {
+    color: #000000;
+    text-decoration: none;
+    position: relative; /* Adiciona posição relativa para posicionar o pseudo-elemento */
+  }
+  
+  .main-header__menu ul li a:hover {
+    color: #007bff;
+  }
+  
+  .main-header__menu ul li a:hover::before {
+    content: ''; /* Cria um pseudo-elemento */
+    position: absolute; /* Posiciona absolutamente em relação ao link */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #007bff; /* Cor de fundo com transparência */
+    z-index: -1; /* Coloca atrás do conteúdo do link */
+    border-radius: inherit; /* Herda o arredondamento de borda do link */
+  }
+  
+  .search-container {
+    display: flex; /* Exibir em linha */
+    align-items: center; /* Alinhar verticalmente */
+  }
+  
+  .search-form {
+    margin-left: 10px; /* Alinhar à direita */
+  }
+  .badge-carrinho{
+    background-color: #007bff;
+    padding: 6px 6px; /* Espaçamento interno */
+    border: 1px solid #ff7f00; /* Estilo da borda */
+    border-top-left-radius: 5px; /* Arredondar canto superior esquerdo */
+    border-bottom-left-radius: 5px; /* Arredondar canto inferior esquerdo */
+
+  }
+  
+  .search-form input[type="text"] {
+    background-color: #edecec;
+    padding: 6px 170px; /* Espaçamento interno */
+    border: 1px solid #000000; /* Estilo da borda */
+    border-top-left-radius: 5px; /* Arredondar canto superior esquerdo */
+    border-bottom-left-radius: 5px; /* Arredondar canto inferior esquerdo */
+    
+  }
+  
+  .search-form button {
+    padding: 8px 8px; /* Espaçamento interno */
+    border: 1px solid #000000; /* Remover borda */
+    background-color: #007bff; /* Cor de fundo do botão */
+    color: #000000; /* Cor do texto do botão */
+    border-top-right-radius: 5px; /* Arredondar canto superior direito */
+    border-bottom-right-radius: 5px; /* Arredondar canto inferior direito */
+    cursor: pointer; /* Alterar cursor ao passar o mouse */
+  }
+  
+  .search-form button:hover {
+    background-color: #5a5d8f; /* Cor de fundo do botão ao passar o mouse */
+  }
